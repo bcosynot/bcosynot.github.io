@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Vivek Ranjan",
-    "label": "Full Stack Senior Software Engineer",
+    "label": "Lead Software Engineer",
     "picture": "https://vivekranjan.me/img/profile.png",
     "email": "vivek@vivekranjan.me",
     "website": "https://vivekranjan.me",
@@ -22,20 +22,28 @@
         "url": "https://www.linkedin.com/in/vivekranjan1"
       }
     ],
-    "summary": "Experienced full stack software engineer who is passionate about building high quality software products that have a positive impact on people's lives. <br />Loves collaborating with folks across various functions in an organization to continuously improve how we work and deliver value to our end users. <br />Enjoys working with engineers at various levels of their career while fostering a culture of learning so that everyone can learn from each other."
+    "summary": "Passionate about building high quality software products that have a positive impact on people's lives.<br />Loves collaborating across various functions to continuously improve how we work and deliver value to our end users.<br />Enjoys working with engineers at all levels of their career while fostering a culture of learning."
   },
   "work": [
+    {
+      "company": "Illuminate Education",
+      "position": "Lead Software Engineer",
+      "website": "https://www.illuminateed.com/",
+      "startDate": "2019-07-01",
+      "highlights": [
+        "Doubled our deployment frequency by leading a cross-functional effort involving stakeholders from multiple departments across the company.",
+        "Saved 2-3 hours per week of employee time by building continuous integration/continuous delivery (CI/CD) pipelines that automate the process of pushing our web application to production. Used YAML configuration files, bash/shell scripts, AWS CLI and Cloudformation to develop these pipelines."
+      ]
+    },
     {
       "company": "FastBridge Learning",
       "position": "Technical Team lead / Senior Software Engineer (Full stack)",
       "website": "https://fastbridge.org",
       "startDate": "2018-02-15",
+      "endDate": "2019-06-30",
       "highlights": [
-        "Played a key role in increasing release frequency from once every two weeks to once a day. Facilitated a cross-functional effort involving stakeholders from multiple departments across the company.",
         "Delivered high-impact reporting web application that provides easy access to millions of data points to help educators & administrators understand the performance of thousands of students across a state in USA.",
-        "Efforts for the above project included building a data-warehouse in AWS Redshift, ETL pipelines to consolidate data from distributed databases into the data-warehouse and a microservice serving RESTful APIs, built with Spring Boot, to query the datawarehouse.",
-        "Doubled our deployment frequency by facilitating a cross-functional effort involving stakeholders from multiple departments across the company.",
-        "Saved 2-3 hours per week of employee time by building continuous integration/continuous delivery (CI/CD) pipelines that automate the process of pushing our web application to production. Used YAML configuration files, bash/shell scripts, AWS CLI and Cloudformation to develop these pipelines."
+        "Efforts for the above project included building a data-warehouse in AWS Redshift, ETL pipelines to consolidate data from distributed databases into the data-warehouse and a microservice serving RESTful APIs, built with Spring Boot, to query the datawarehouse."
       ]
     },
     {
