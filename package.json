@@ -16,7 +16,7 @@
   "homepage": "https://github.com/bcosynot/bcosynot.github.io#readme",
   "devDependencies": {
     "bower": "^1.8.8",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "gulp": "^4.0.2",
     "resume-cli": "^1.2.7"
   },
