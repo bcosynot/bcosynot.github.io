@@ -21,86 +21,53 @@
         "username": "vivekranjan1",
         "url": "https://www.linkedin.com/in/vivekranjan1"
       }
-    ],
-    "summary": "Passionate about building high quality software products that have a positive impact on people's lives.<br />Loves collaborating across various functions to continuously improve how we work and deliver value to our end users.<br />Enjoys working with engineers at all levels of their career while fostering a culture of learning."
+    ]
   },
   "work": [
+    {
+      "company": "Renaissance Learning",
+      "position": "Staff Software Engineer",
+      "website": "https://www.renaissance.com/",
+      "startDate": "2022-03-01",
+      "highlights": [
+        "Reduced costs of batch processing jobs by 73% and doubled deployment frequency by 40%. Using AWS Fargate and CDK"
+      ]
+    },
     {
       "company": "Illuminate Education",
       "position": "Lead Software Engineer",
       "website": "https://www.illuminateed.com/",
       "startDate": "2019-07-01",
+      "endDate": "2022-03-01",
       "highlights": [
-        "Doubled our deployment frequency by leading a cross-functional effort involving stakeholders from multiple departments across the company.",
-        "Saved 2-3 hours per week of employee time by building continuous integration/continuous delivery (CI/CD) pipelines that automate the process of pushing our web application to production. Used YAML configuration files, bash/shell scripts, AWS CLI and Cloudformation to develop these pipelines."
+        "Led a project to redesign key functionality by rewriting parts of the backend (Java, Spring, REST, Hibernate, SQL Server, Groovy/Spock) and frontend (Vue, Vuex, Jest)",
+        "Led a cross-functional effort to 2x our deployment frequency."
       ]
     },
     {
       "company": "FastBridge Learning",
-      "position": "Technical Team lead / Senior Software Engineer (Full stack)",
-      "website": "https://fastbridge.org",
-      "startDate": "2018-02-15",
-      "endDate": "2019-06-30",
-      "highlights": [
-        "Delivered high-impact reporting web application that provides easy access to millions of data points to help educators & administrators understand the performance of thousands of students across a state in USA.",
-        "Efforts for the above project included building a data-warehouse in AWS Redshift, ETL pipelines to consolidate data from distributed databases into the data-warehouse and a microservice serving RESTful APIs, built with Spring Boot, to query the datawarehouse."
-      ]
-    },
-    {
-      "company": "FastBridge Learning",
-      "position": "Senior Software Engineer (Full stack)",
+      "position": "Technical Team lead / Senior Software Engineer",
       "website": "https://fastbridge.org",
       "startDate": "2017-03-15",
-      "endDate": "2018-02-15",
+      "endDate": "2019-06-30",
       "highlights": [
-        "Reduced load time by 98% for a web-based graphical and tabular report, used by educators to inform instructional methodoly for at-risk students",
-        "Reduced overall development time and change conflicts by building a Docker image of our MS SQL Server database that could be used for development on every software engineer's machine.",
-        "Helped re-write our software to take advantage of a more distribute system so that we scale with our growing customer base"
+        "Delivered high-impact reporting web application providing access to millions of data points that helps educators understand student performance in a mid-western state.",
+        "Built a data-warehouse in AWS Redshift and a microservice serving RESTful APIs using Spring Boot"
       ]
     },
     {
       "company": "FastBridge Learning",
-      "position": "Software Engineer (Full stack)",
+      "position": "Software Engineer",
       "website": "https://fastbridge.org",
       "startDate": "2015-06-15",
       "endDate": "2017-03-15",
       "highlights": [
-        "Helped hundreds of thousands of students improve their skills in reading and math by building features full stack for our web application. These features help thousands of educators assess students' skills in reading and math and then analyze millions of data points (in aggregate) to determine which students are at risk and then monitor the progress of these at-risk students over a period of few months to a year.",
-        "One of the earliest engineers (4th engineer) at a small startup company (~10 employees).",
+        "4th engineer at an early-stage EdTech startup (~10 employees).",
         "Backend - Spring (Boot, JPA, Data, Data REST, MVC), JPA/Hibernate, Microsoft SQL Server along with AWS Redshift and other AWS technologies.",
         "Frontend - HTML/CSS, Bootstrap and JavaScript (ES6, webpack, babel and jQuery)."
       ]
-    },
-    {
-      "company": "University of Minnesota",
-      "position": "Full Stack Software Engineer",
-      "startDate": "2014-01-09",
-      "endDate": "2015-05-24",
-      "highlights": [
-        "Using Java (Spring MVC) with HTML/CSS/JS, jQuery and Microsoft SQL server, I added features to existing web app for assessing reading abilities of 1000s of students and tracking their progress.",
-        "Mentored junior engineer."
-      ]
-    },
-    {
-      "company": "Unique Identification Authority of India (Aadhaar)",
-      "position": "Software Engineer (Intern)",
-      "startDate": "2011-12-15",
-      "endDate": "2012-06-15",
-      "highlights": [
-        "Decreased runtime of de-duplication program by ~76% (from ~25 hours to ~6 hours).",
-        "Built tools to make the intake millions of residents into the Indian government's universal identification program (Aadhaar) more efficient and accurate."
-      ]
     }
   ],
-  "volunteer": [{
-    "organization": "Astoria Digital",
-    "position": "Community Engineer",
-    "website": "https://astoria.digital/",
-    "startDate": "2020-04-01",
-    "highlights": [
-      "Helped build an open source volunteer coordination system in use by Astoria Mutual Aid Network. - https://github.com/astoria-tech/volunteer-dispatch"
-    ]
-  }],
   "education": [
     {
       "institution": "University of Minnesota",
@@ -124,9 +91,7 @@
         "HTML/CSS",
         "JavaScript",
         "React",
-        "Redux",
-        "Vue",
-        "Vuex"
+        "Vue"
       ]
     },
     {
@@ -134,23 +99,17 @@
       "keywords": [
         "Java",
         "Spring (Boot, MVC, JPA, Data, Data REST, MVC)",
-        "JPA/Hibernate",
         "SQL (MS SQL Server, Postgres, MySQL, AWS Redshift)",
         "Python",
-        "NodeJS",
-        "Express"
+        "NodeJS"
       ]
     },
     {
       "name": "Other",
       "keywords": [
-        "Bash/Shell scripting",
-        "Git",
-        "Amazon Web Service (AWS)",
-        "AWS CLI",
-        "Various AWS services like ECR, ElasticBeanstalk, Cloudfront, S3, Cloudformation",
-        "Heroku",
-        "Docker"
+        "Shell scripting",
+        "Docker",
+        "AWS services like IAM, ECS, ECR, ElasticBeanstalk, Cloudformation, CDK"
       ]
     }
   ]
