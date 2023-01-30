@@ -30,30 +30,30 @@
             	margin-bottom: 0;
             }
             section {
-            	margin: 1em 0 2em;
+            	margin: 0;
             }
             blockquote {
             	margin: 0;
             	margin-bottom: 1em;
             }
             #resume {
-            	margin: 2em 2em 2em 2.5em;
-            	max-width: 760px;
+            	margin: 1.2em;
+            	max-width: 780px;
             }
             
             /* Resume heading */
-            .heading header { 
+            .heading header {
             
             }
             
             .heading header h1 {
-            	font-size: 180%;
+            	font-size: 160%;
             	margin: 0.5em 0;
             	font-weight: 600;
             }
             
             .heading header h2 {
-            	font-size: 140%;
+            	font-size: 120%;
             	margin: 0;
             	font-weight: 400;
             }
@@ -75,7 +75,7 @@
             /* section / line breaks */
             section h2 {
             	font-size: 140%;
-            	margin: 0 0 1em;
+            	margin: 0;
             	text-transform: uppercase;
             	color: #BC1B39;
             	font-weight: 400;
@@ -117,6 +117,7 @@
             .item .highlights {
             	list-style: square;
             	font-size: 90%;
+            	padding-inline-start: 1em;
             }
             
             /* skills */
@@ -130,14 +131,14 @@
             	font-weight: 600;
             	display: inline-block;
             	text-transform: uppercase;
-            	margin: 0 1em 0 0;
-            	width: 23%;
+            	margin: 0;
+            	width: 20%;
             	vertical-align: top;
             }
             
             #skills .item .keywords {
             	display: inline-block;
-            	width: 70%;
+            	width: 79%;
             	vertical-align: top;
             }
             
@@ -150,10 +151,11 @@
             }
         </style>
         <style media="print">
-            body { font-size: 12px; }
+            body { font-size: 14px; }
         </style>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300'
         rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     </head>
     
     <body>
@@ -162,7 +164,9 @@
                 <header>
                     	<h1>Vivek Ranjan</h1>
 
-                    <div class="contact"> <span class="detail">New York, New York</span>
+                    <div class="contact"> <span class="detail">
+                    New York, New York
+                    </span>
 	<span class="detail">
 					<a href="mailto:vivek@vivekranjan.me">vivek@vivekranjan.me</a>
 				</span>
@@ -170,24 +174,23 @@
 					<a href="https://vivekranjan.me">https://vivekranjan.me</a>
 				</span>
 
+                        <br /> <span class="detail">
+                        <i class="lab la-github"></i>
+                            <a href="https://github.com/bcosynot">bcosynot</a>
+                        </span>
+ <span class="detail">
+                        <i class="lab la-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/vivekranjan1">vivekranjan1</a>
+                        </span>
+
                     </div>
                 </header>
-                <div class="profile">	<strong class="network">
-					GitHub
-				</strong>
-	<span class="username">
-					<a href="https://github.com/bcosynot">bcosynot</a>
-				</span>
-
-                </div>
-                <div class="profile">	<strong class="network">
-					LinkedIn
-				</strong>
-	<span class="username">
-					<a href="https://www.linkedin.com/in/vivekranjan1">vivekranjan1</a>
-				</span>
-
-                </div>
+                <p>
+                    <p>My passion is building software products that solve meaningful problems
+                        and enhance people&#39;s lives. I enjoy constantly exploring ways to level
+                        up my team, streamline the organization&#39;s software development process,
+                        and optimize our systems for efficiency and effectiveness.</p>
+                </p>
             </section>
             <section id="skills">
                 	<h2>Skills</h2>
@@ -203,8 +206,8 @@
                 </div>
                 <div class="item">
                     <div class="name">Other</div>
-                    <div class="keywords">Shell scripting, Docker, AWS services like IAM, ECS, ECR, ElasticBeanstalk,
-                        Cloudformation, CDK</div>
+                    <div class="keywords">Shell scripting, Docker, AWS services like IAM, ECS, ECR, Fargate, ElasticBeanstalk,
+                        Cloudformation, CDK, S3, Lambda</div>
                 </div>
             </section>
             <section class="experience">
@@ -225,8 +228,16 @@
 			</span>
 
                     <ul class="highlights">
-                        <li>Reduced costs of batch processing jobs by 73% and doubled deployment frequency
-                            by 40%. Using AWS Fargate and CDK</li>
+                        <li>Proposed and led a project that reduced costs by 73% while removing security
+                            and operational overhead by moving batch processing jobs from manually
+                            managed servers to AWS Fargate.</li>
+                        <li>Increased deployment frequency of these jobs by 40% by building a framework
+                            that allows developers across the organization to quickly and consistently
+                            configure deployments of these jobs with IaC in Python using AWS CDK and
+                            Docker.</li>
+                        <li>This framework also improved the observability of the batch jobs by automatically
+                            configuring them with Datadog and Cronitor. I built a custom CDK module
+                            to allow the setup of Cronitor monitors as part of deployments.</li>
                     </ul>
                 </section>
                 <section class="item">
@@ -244,10 +255,18 @@
 			</span>
 
                     <ul class="highlights">
-                        <li>Led a project to redesign key functionality by rewriting parts of the
-                            backend (Java, Spring, REST, Hibernate, SQL Server, Groovy/Spock) and frontend
-                            (Vue, Vuex, Jest)</li>
-                        <li>Led a cross-functional effort to 2x our deployment frequency.</li>
+                        <li>Proposed and led a cross-functional effort to 2x our deployment frequency
+                            and remove ~10 hours/week of manual work by automating our monolith application&#x27;s
+                            deployment and introducing end-to-end testing in our pipelines. Used Docker,
+                            YAML, shell scripts, AWS CLI and Cloudformation.</li>
+                        <li>Proposed and led a project to remove the dependency of 4 weeks per year
+                            of engineering time to release content created by our User Training department.
+                            Achieved this by building a content management system using AWS Aurora
+                            serverless (Postgres), AWS Lambda, AWS API Gateway, Vue, Vuex, and Jest.</li>
+                        <li>Led a project to implement the UX redesign of crucial functionality that
+                            helps educators monitor the progress of millions of students by rewriting
+                            the frontend (Vue, Vuex, Jest) and rewriting parts of the backend (Java,
+                            Spring, REST, Hibernate, MS SQL Server, Groovy/Spock).</li>
                     </ul>
                 </section>
                 <section class="item">
@@ -265,11 +284,14 @@
 			</span>
 
                     <ul class="highlights">
-                        <li>Delivered high-impact reporting web application providing access to millions
-                            of data points that helps educators understand student performance in a
-                            mid-western state.</li>
-                        <li>Built a data-warehouse in AWS Redshift and a microservice serving RESTful
-                            APIs using Spring Boot</li>
+                        <li>Led project to deliver a web application that provides easy access to
+                            millions of data points that help educators understand the performance
+                            of all students in a mid-western state.</li>
+                        <li>Worked with the team to build a datawarehouse in AWS Redshift, a microservice
+                            serving REST APIs using Spring Boot and JS-based frontend to render the
+                            data as user-friendly reports.</li>
+                        <li>Helped rewrite our software to take advantage of a more distributed system
+                            so that we can scale and serve our growing customer base.</li>
                     </ul>
                 </section>
                 <section class="item">
@@ -287,11 +309,55 @@
 			</span>
 
                     <ul class="highlights">
-                        <li>4th engineer at an early-stage EdTech startup (~10 employees).</li>
+                        <li>4th engineer at an early-stage EdTech startup (~10 employees). Helped
+                            educators understand the needs of millions of students in reading and math
+                            by building software across the entire stack for our web application.</li>
                         <li>Backend - Spring (Boot, JPA, Data, Data REST, MVC), JPA/Hibernate, Microsoft
                             SQL Server along with AWS Redshift and other AWS technologies.</li>
                         <li>Frontend - HTML/CSS, Bootstrap and JavaScript (ES6, webpack, babel and
                             jQuery).</li>
+                    </ul>
+                </section>
+                <section class="item">
+                    <header>
+                        	<h3 class="name">University of Minnesota</h3>
+
+                    </header>	<span class="position">
+				Full Stack Software Engineer (Part-time)
+			</span>
+	<span class="startDate">
+				Jan 2014
+			</span>
+	<span class="endDate">
+				- May 2015
+			</span>
+
+                    <ul class="highlights">
+                        <li>Using Java (Spring MVC) with HTML/CSS/JS, jQuery, and Microsoft SQL server,
+                            I added features to an existing web app to assess the reading abilities
+                            of 1000s of students and track their progress</li>
+                    </ul>
+                </section>
+                <section class="item">
+                    <header>
+                        	<h3 class="name">Unique Identification Authority of India (Aadhaar)</h3>
+
+                    </header>	<span class="position">
+				Software Engineer (Intern)
+			</span>
+	<span class="startDate">
+				Dec 2011
+			</span>
+	<span class="endDate">
+				- Jun 2012
+			</span>
+
+                    <ul class="highlights">
+                        <li>Decreased runtime by ~76% of de-duplication program (from ~25 hours to
+                            ~6 hours).</li>
+                        <li>Built tools to make the intake of millions of residents into the Indian
+                            government&#x27;s universal identification program (Aadhaar) more efficient
+                            and accurate.</li>
                     </ul>
                 </section>
             </section>
@@ -341,6 +407,33 @@
 				</span>
 
                     </div>
+                </div>
+            </section>
+            <section class="experience">
+                	<h2>Volunteering</h2>
+
+                <div class="item">
+                    <header>
+                        	<h3 class="name">Astoria Digital</h3>
+
+                    </header>	<span class="position">
+    				Community Engineer
+    			</span>
+	<span class="startDate">
+    				Mar 2020
+    			</span>
+	<span class="endDate">
+    				- Aug 2020
+    			</span>
+
+                    <ul class="highlights">
+                        <li>Helped build an open-source volunteer coordination and dispatch system
+                            in use by Astoria Mutual Aid Network - <a href="https://github.com/astoria-tech/volunteer-dispatch">https://github.com/astoria-tech/volunteer-dispatch</a>
+                        </li>
+                        <li>Built a system that helps community organizers keep track of waiting times
+                            at COVID testing sites in NYC - <a href="https://github.com/astoria-tech/nyc-covid19-testing-wait-times">https://github.com/astoria-tech/nyc-covid19-testing-wait-times</a>
+                        </li>
+                    </ul>
                 </div>
             </section>
         </div>

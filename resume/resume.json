@@ -21,7 +21,8 @@
         "username": "vivekranjan1",
         "url": "https://www.linkedin.com/in/vivekranjan1"
       }
-    ]
+    ],
+    "summary": "My passion is building software products that solve meaningful problems and enhance people's lives. I enjoy constantly exploring ways to level up my team, streamline the organization's software development process, and optimize our systems for efficiency and effectiveness."
   },
   "work": [
     {
@@ -30,7 +31,9 @@
       "website": "https://www.renaissance.com/",
       "startDate": "2022-03-01",
       "highlights": [
-        "Reduced costs of batch processing jobs by 73% and doubled deployment frequency by 40%. Using AWS Fargate and CDK"
+        "Proposed and led a project that reduced costs by 73% while removing security and operational overhead by moving batch processing jobs from manually managed servers to AWS Fargate.",
+        "Increased deployment frequency of these jobs by 40% by building a framework that allows developers across the organization to quickly and consistently configure deployments of these jobs with IaC in Python using AWS CDK and Docker.",
+        "This framework also improved the observability of the batch jobs by automatically configuring them with Datadog and Cronitor. I built a custom CDK module to allow the setup of Cronitor monitors as part of deployments."
       ]
     },
     {
@@ -40,8 +43,9 @@
       "startDate": "2019-07-01",
       "endDate": "2022-03-01",
       "highlights": [
-        "Led a project to redesign key functionality by rewriting parts of the backend (Java, Spring, REST, Hibernate, SQL Server, Groovy/Spock) and frontend (Vue, Vuex, Jest)",
-        "Led a cross-functional effort to 2x our deployment frequency."
+        "Proposed and led a cross-functional effort to 2x our deployment frequency and remove ~10 hours/week of manual work by automating our monolith application's deployment and introducing end-to-end testing in our pipelines. Used Docker, YAML, shell scripts, AWS CLI and Cloudformation. ",
+        "Proposed and led a project to remove the dependency of 4 weeks per year of engineering time to release content created by our User Training department. Achieved this by building a content management system using AWS Aurora serverless (Postgres), AWS Lambda, AWS API Gateway, Vue, Vuex, and Jest.",
+        "Led a project to implement the UX redesign of crucial functionality that helps educators monitor the progress of millions of students by rewriting the frontend (Vue, Vuex, Jest) and rewriting parts of the backend (Java, Spring, REST, Hibernate, MS SQL Server, Groovy/Spock)."
       ]
     },
     {
@@ -51,8 +55,9 @@
       "startDate": "2017-03-15",
       "endDate": "2019-06-30",
       "highlights": [
-        "Delivered high-impact reporting web application providing access to millions of data points that helps educators understand student performance in a mid-western state.",
-        "Built a data-warehouse in AWS Redshift and a microservice serving RESTful APIs using Spring Boot"
+        "Led project to deliver a web application that provides easy access to millions of data points that help educators understand the performance of all students in a mid-western state.",
+        "Worked with the team to build a datawarehouse in AWS Redshift, a microservice serving REST APIs using Spring Boot and JS-based frontend to render the data as user-friendly reports.",
+        "Helped rewrite our software to take advantage of a more distributed system so that we can scale and serve our growing customer base."
       ]
     },
     {
@@ -62,9 +67,41 @@
       "startDate": "2015-06-15",
       "endDate": "2017-03-15",
       "highlights": [
-        "4th engineer at an early-stage EdTech startup (~10 employees).",
+        "4th engineer at an early-stage EdTech startup (~10 employees). Helped educators understand the needs of millions of students in reading and math by building software across the entire stack for our web application.",
         "Backend - Spring (Boot, JPA, Data, Data REST, MVC), JPA/Hibernate, Microsoft SQL Server along with AWS Redshift and other AWS technologies.",
         "Frontend - HTML/CSS, Bootstrap and JavaScript (ES6, webpack, babel and jQuery)."
+      ]
+    },
+    {
+      "company": "University of Minnesota",
+      "position": "Full Stack Software Engineer (Part-time)",
+      "startDate": "2014-01-09",
+      "endDate": "2015-05-24",
+      "highlights": [
+        "Using Java (Spring MVC) with HTML/CSS/JS, jQuery, and Microsoft SQL server, I added features to an existing web app to assess the reading abilities of 1000s of students and track their progress"
+      ]
+    },
+    {
+      "company": "Unique Identification Authority of India (Aadhaar)",
+      "position": "Software Engineer (Intern)",
+      "startDate": "2011-12-15",
+      "endDate": "2012-06-15",
+      "highlights": [
+        "Decreased runtime by ~76% of de-duplication program (from ~25 hours to ~6 hours).",
+        "Built tools to make the intake of millions of residents into the Indian government's universal identification program (Aadhaar) more efficient and accurate."
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Astoria Digital",
+      "position": "Community Engineer",
+      "website": "https://astoria.digital/",
+      "startDate": "2020-04-01",
+      "endDate": "2020-09-01",
+      "highlights": [
+        "Helped build an open-source volunteer coordination and dispatch system in use by Astoria Mutual Aid Network - https://github.com/astoria-tech/volunteer-dispatch",
+        "Built a system that helps community organizers keep track of waiting times at COVID testing sites in NYC - https://github.com/astoria-tech/nyc-covid19-testing-wait-times"
       ]
     }
   ],
@@ -109,7 +146,7 @@
       "keywords": [
         "Shell scripting",
         "Docker",
-        "AWS services like IAM, ECS, ECR, ElasticBeanstalk, Cloudformation, CDK"
+        "AWS services like IAM, ECS, ECR, Fargate, ElasticBeanstalk, Cloudformation, CDK, S3, Lambda"
       ]
     }
   ]

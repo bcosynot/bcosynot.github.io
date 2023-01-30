@@ -25,6 +25,6 @@
     "jsonresume-theme-short-with-location": "0.0.0"
   },
   "scripts": {
-    "generate": "rm ./resume/VivekRanjanResume.pdf ./resume/resume.pdf ./resume/resume.html; hackmyresume BUILD ./resume/resume.json TO ./resume/resume.html ./resume/VivekRanjanResume.pdf ./resume/resume.pdf -t node_modules/jsonresume-theme-short-with-location --pdf weasyprint"
+    "generate": "rm ./resume/VivekRanjanResume.pdf ./resume/resume.pdf ./resume/resume.html; hackmyresume BUILD ./resume/resume.json TO ./resume/resume.html ./resume/VivekRanjanResume.pdf ./resume/resume.pdf -t ./jsonresume-theme-short-with-location --pdf weasyprint"
   }
 }

@@ -1,0 +1,49 @@
+{
+  "_from": "jsonresume-theme-short-with-location",
+  "_id": "jsonresume-theme-short-with-location@0.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-7Yl6/48Dj7KWjDIzM0nYzuk08w4WaZb2v005PC2X5LW8kudWPTB2/j4Ty6vHtQq7Mx3GJTvGvstcW/EpjAsZ9A==",
+  "_location": "/jsonresume-theme-short-with-location",
+  "_phantomChildren": {
+    "neo-async": "2.6.1",
+    "optimist": "0.6.1"
+  },
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "jsonresume-theme-short-with-location",
+    "name": "jsonresume-theme-short-with-location",
+    "escapedName": "jsonresume-theme-short-with-location",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jsonresume-theme-short-with-location/-/jsonresume-theme-short-with-location-0.0.0.tgz",
+  "_shasum": "72213ba3e92ba50154c563d3c4fdee7a2bfda3b1",
+  "_spec": "jsonresume-theme-short-with-location",
+  "_where": "/Users/vivek/IdeaProjects/bcosynot.github.io",
+  "author": {
+    "name": "Vivek Ranjan"
+  },
+  "bugs": {
+    "url": "https://github.com/bcosynot/jsonresume-theme-short/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "handlebars": "^4.7.3"
+  },
+  "deprecated": false,
+  "description": "Simple to the point theme for JSON Resume",
+  "homepage": "https://github.com/bcosynot/jsonresume-theme-short#readme",
+  "license": "MIT",
+  "name": "jsonresume-theme-short-with-location",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcosynot/jsonresume-theme-short.git"
+  },
+  "version": "0.0.0"
+}
