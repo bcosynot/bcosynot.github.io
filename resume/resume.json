@@ -22,7 +22,7 @@
         "url": "https://www.linkedin.com/in/vivekranjan1"
       }
     ],
-    "summary": "My passion is building software products that solve meaningful problems and enhance people's lives. I enjoy constantly exploring ways to level up my team, streamline the organization's software development process, and optimize our systems for efficiency and effectiveness."
+    "summary": "For me, software development is more than just a job - it's a calling. I am on a mission to build products that matter, and I am relentless in my pursuit of new and better ways to level up my team, streamline our work, and make our systems work at their best. Creating real and lasting impact through software is what drives me every day."
   },
   "work": [
     {
@@ -31,9 +31,9 @@
       "website": "https://www.renaissance.com/",
       "startDate": "2022-03-01",
       "highlights": [
-        "Proposed and led a project that reduced costs by 73% while removing security and operational overhead by moving batch processing jobs from manually managed servers to AWS Fargate.",
-        "Increased deployment frequency of these jobs by 40% by building a framework that allows developers across the organization to quickly and consistently configure deployments of these jobs with IaC in Python using AWS CDK and Docker.",
-        "This framework also improved the observability of the batch jobs by automatically configuring them with Datadog and Cronitor. I built a custom CDK module to allow the setup of Cronitor monitors as part of deployments."
+        "Achieved 73% cost reduction by initiating project for moving batch jobs to AWS Fargate.",
+        "Crafted a framework resulting in 40% boost in batch job deployment frequency and enabled other engineers to configure deployments with ease using IaC in Python with AWS CDK and Docker.",
+        "Improved observability of batch jobs by automatically configuring them with Datadog and Cronitor. Built a custom CDK module for Cronitor monitors."
       ]
     },
     {
@@ -43,9 +43,9 @@
       "startDate": "2019-07-01",
       "endDate": "2022-03-01",
       "highlights": [
-        "Proposed and led a cross-functional effort to 2x our deployment frequency and remove ~10 hours/week of manual work by automating our monolith application's deployment and introducing end-to-end testing in our pipelines. Used Docker, YAML, shell scripts, AWS CLI and Cloudformation. ",
-        "Proposed and led a project to remove the dependency of 4 weeks per year of engineering time to release content created by our User Training department. Achieved this by building a content management system using AWS Aurora serverless (Postgres), AWS Lambda, AWS API Gateway, Vue, Vuex, and Jest.",
-        "Led a project to implement the UX redesign of crucial functionality that helps educators monitor the progress of millions of students by rewriting the frontend (Vue, Vuex, Jest) and rewriting parts of the backend (Java, Spring, REST, Hibernate, MS SQL Server, Groovy/Spock)."
+        "Led project for UX redesign implementation of crucial progress monitoring tool used by educators and millions of students. Modernized frontend (Vue, Vuex, Jest) and optimized backend (Java, Spring, REST, Hibernate, MS SQL Server, Groovy/Spock).",
+        "Eliminated 4 weeks per year of engineering time for content release by proposing and leading project to develop a content management system using AWS Aurora serverless (Postgres), Lambdas, API Gateway, Vue, Vuex, and Jest.",
+        "Proposed and led cross-functional project resulting in 2X increase in deployment frequency and eliminating 10 hours per week of manual work by automating monolith deployments and introducing end-to-end testing in CI/CD pipelines using Docker, YAML, shell scripts, AWS CLI and Cloudformation."
       ]
     },
     {
@@ -67,7 +67,7 @@
       "startDate": "2015-06-15",
       "endDate": "2017-03-15",
       "highlights": [
-        "4th engineer at an early-stage EdTech startup (~10 employees). Helped educators understand the needs of millions of students in reading and math by building software across the entire stack for our web application.",
+        "4th engineer at an early-stage EdTech startup (~10 employees). Developed features end-to-end to help educators understand needs of millions of students in reading and math.",
         "Backend - Spring (Boot, JPA, Data, Data REST, MVC), JPA/Hibernate, Microsoft SQL Server along with AWS Redshift and other AWS technologies.",
         "Frontend - HTML/CSS, Bootstrap and JavaScript (ES6, webpack, babel and jQuery)."
       ]
@@ -110,14 +110,12 @@
       "institution": "University of Minnesota",
       "area": "Computer Science",
       "studyType": "Master",
-      "startDate": "2013-09-01",
       "endDate": "2016-12-20"
     },
     {
       "institution": "University of Mumbai",
       "area": "Information Technology",
       "studyType": "Bachelor",
-      "startDate": "2008-08-01",
       "endDate": "2013-06-01"
     }
   ],
@@ -128,13 +126,19 @@
         "HTML/CSS",
         "JavaScript",
         "React",
-        "Vue"
+        "Redux",
+        "Vue",
+        "Vuex",
+        "Jest"
       ]
     },
     {
       "name": "Backend",
       "keywords": [
         "Java",
+        "JUnit",
+        "Groovy",
+        "Spock",
         "Spring (Boot, MVC, JPA, Data, Data REST, MVC)",
         "SQL (MS SQL Server, Postgres, MySQL, AWS Redshift)",
         "Python",

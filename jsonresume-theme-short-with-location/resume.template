@@ -32,6 +32,7 @@
                     {{location.city}}, {{location.region}}
                     </span>
                 {{/if}}
+				<br />
 				{{#if email}}
 				<span class="detail">
 					<a href="mailto:{{email}}">{{email}}</a>
@@ -47,7 +48,6 @@
 					<a href="{{website}}">{{website}}</a>
 				</span>
 				{{#if profiles.length}}
-				<br />
                         {{#each profiles}}
                         <span class="detail">
                         {{#if network}}
@@ -164,7 +164,7 @@
 				{{/if}}
 				{{#if endDate}}
 				<span class="endDate">
-					- {{date endDate}}
+					{{date endDate}}
 				</span>
 				{{else}}
 				<span class="endDate">
