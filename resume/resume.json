@@ -20,9 +20,14 @@
         "network": "LinkedIn",
         "username": "vivekranjan1",
         "url": "https://www.linkedin.com/in/vivekranjan1"
+      },
+      {
+        "network": "book",
+        "username": "Blog",
+        "url": "https://prodlog.makerflow.co/"
       }
     ],
-    "summary": "For me, software development is more than just a job - it's a calling. I am on a mission to build products that matter, and I am relentless in my pursuit of seeking new and creative ways to enhance my team's abilities, streamline our work, and make our systems work at their best. Creating real and lasting impact through software is what drives me every day."
+    "summary": "I find my calling in solving meaningful, real-world problems with full stack software development. I am relentless in continually discovering new ways to enhance our systems or advance our organizational software building practices. The challenge of finding solutions, presenting them, and delivering results fuels my passion every day."
   },
   "work": [
     {
