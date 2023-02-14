@@ -51,7 +51,9 @@
                         {{#each profiles}}
                         <span class="detail">
                         {{#if network}}
-                        {{socialIcon network}}
+                        {{#if url}}
+                        <a href="{{url}}">{{socialIcon network}}</a>
+                        {{/if}}
                         {{/if}}
                         {{#if username}}
                             {{#if url}}
@@ -113,11 +115,6 @@
 			</span>
 			{{/if}}
 
-			{{#if startDate}}
-			<span class="startDate">
-				{{date startDate}}
-			</span>
-			{{/if}}
 			{{#if endDate}}
 			<span class="endDate">
 				- {{date endDate}}
@@ -127,6 +124,11 @@
 				- Present
 			</span>
 			{{/if}}
+			{{#if startDate}}
+            <span class="startDate">
+                {{date startDate}}
+            </span>
+            {{/if}}
 
 			{{#if summary}}
 			<div class="summary">
@@ -157,11 +159,6 @@
 			</header>
 
 			<div class="dates">
-				{{#if startDate}}
-				<span class="startDate">
-					{{date startDate}}
-				</span>
-				{{/if}}
 				{{#if endDate}}
 				<span class="endDate">
 					{{date endDate}}
@@ -171,6 +168,11 @@
 					- Present
 				</span>
 				{{/if}}
+				{{#if startDate}}
+                <span class="startDate">
+                    {{date startDate}}
+                </span>
+                {{/if}}
 			</div>
 
 			<div class="qualification">
@@ -299,11 +301,7 @@
     			</span>
     			{{/if}}
 
-    			{{#if startDate}}
-    			<span class="startDate">
-    				{{date startDate}}
-    			</span>
-    			{{/if}}
+
     			{{#if endDate}}
     			<span class="endDate">
     				- {{date endDate}}
@@ -313,6 +311,11 @@
     				- Present
     			</span>
     			{{/if}}
+    			{{#if startDate}}
+                <span class="startDate">
+                    {{date startDate}}
+                </span>
+                {{/if}}
 
     			{{#if summary}}
     			<div class="summary">

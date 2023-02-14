@@ -13,12 +13,12 @@
     "profiles": [
       {
         "network": "GitHub",
-        "username": "bcosynot",
+        "username": "/bcosynot",
         "url": "https://github.com/bcosynot"
       },
       {
         "network": "LinkedIn",
-        "username": "vivekranjan1",
+        "username": "LinkedIn",
         "url": "https://www.linkedin.com/in/vivekranjan1"
       },
       {
@@ -27,7 +27,7 @@
         "url": "https://prodlog.makerflow.co/"
       }
     ],
-    "summary": "I find my calling in solving significant, real-world problems with software. I lean towards backend development but enjoy branching out and working with frontend and infrastructure technologies. I am relentlessly discovering new ways to enhance our systems and advance our organizational software-building practices. The challenge of finding problems, presenting solutions, and delivering results - fuels my passion every day."
+    "summary": "I find my calling in solving significant, real-world problems with full-stack software engineering. I lean towards backend development but enjoy branching out and working with frontend and infrastructure technologies. I am relentlessly discovering new ways to enhance our systems and advance our organizational software-building practices. The challenge of finding problems, presenting solutions, and delivering results - fuels my passion every day."
 },
   "work": [
     {
@@ -42,9 +42,7 @@
       ]
     },
     {
-      "company": "Illuminate Education",
       "position": "Lead Software Engineer",
-      "website": "https://www.illuminateed.com/",
       "startDate": "2019-07-01",
       "endDate": "2022-03-01",
       "highlights": [
@@ -55,7 +53,7 @@
     },
     {
       "company": "FastBridge Learning",
-      "position": "Technical Team lead / Senior Software Engineer",
+      "position": "Technical Team Lead / Senior Software Engineer",
       "website": "https://fastbridge.org",
       "startDate": "2017-03-15",
       "endDate": "2019-06-30",
@@ -127,33 +125,30 @@
   ],
   "skills": [
     {
+      "name": "Backend",
+      "keywords": [
+        "Java",
+        "NodeJS",
+        "Python",
+        "Spring (Spring Boot, Spring MVC, etc)",
+        "SQL (MS SQL Server, Postgres)"
+      ]
+    },
+    {
       "name": "Frontend",
       "keywords": [
         "HTML/CSS",
         "JavaScript",
+        "Typescript",
         "React",
         "Redux",
         "Vue",
         "Vuex",
-        "Jest",
-        "Typescript"
+        "Jest"
       ]
     },
     {
-      "name": "Backend",
-      "keywords": [
-        "Java",
-        "JUnit",
-        "Groovy",
-        "Spock",
-        "Spring (Boot, MVC, JPA, Data, Data REST, MVC)",
-        "SQL (MS SQL Server, Postgres, MySQL, AWS Redshift)",
-        "Python",
-        "NodeJS"
-      ]
-    },
-    {
-      "name": "Other",
+      "name": "Infrastructure/Other",
       "keywords": [
         "Shell scripting",
         "Docker",

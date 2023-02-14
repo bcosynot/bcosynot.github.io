@@ -106,6 +106,16 @@ section h2 {
 	color: #6B6B6B;
 }
 
+.item .startDate {
+	float: right;
+	width: 4.5rem;
+}
+
+.item .endDate {
+	float: right;
+	width: 5rem;
+}
+
 .item .highlights {
 	list-style: square;
 	font-size: 90%;
