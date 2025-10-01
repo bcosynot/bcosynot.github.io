@@ -31,18 +31,32 @@
 },
   "work": [
     {
+      "company": "Capsule",
+      "position": "Staff Software Engineer",
+      "startDate": "2025-04-18",
+      "highlights": [
+        "Built an internal tool to help pharmacists validate prescriptions and benefits",
+        "Ported existing app to NextJS and modern React",
+        "Used observability tools like Sentry, Prometheus, Loki, etc to debug issues during on-call rotations",
+        "Backend - Python, Django, PostgresSQL",
+        "Frontend - NextJS, React, Vite",
+        "Infrastructure/Other - Docker, AWS (EKS, RDS, SQS), Shell, CI/CD pipelines, Sentry, Prometheus, Loki"
+      ]
+    },
+    {
       "company": "Renaissance Learning",
       "position": "Staff Software Engineer",
       "website": "https://www.renaissance.com/",
       "startDate": "2022-03-01",
+      "endDate": "2025-04-15",
       "highlights": [
         "Proposed & led project: Achieved 73% cost reduction by moving batch jobs to AWS Fargate.",
         "Crafted framework resulting in 40% boost in deployment frequency. Using IaC in Python with AWS CDK and Docker, this framework enabled teams to develop and deploy batch jobs with ease.",
         "This framework added observability to batch jobs by automatically configuring them with Datadog and Cronitor. Built a custom CDK module for Cronitor monitors.",
-        "Helped with incidents by debugging performance issues in legacy Java monolith",
+        "Helped with incidents by debugging performance issues in legacy Java monolith using observability tools like Datadog",
         "Backend - Python, pytest, Java, Spring (MVC), Groovy/Spock, Microsoft SQL Server",
         "Frontend - Vue/Vuex, HTML/CSS, JavaScript, Jest",
-        "Infrastructure/Other - Docker, AWS (ECS/ECR, Fargate, CDK), Shell, CI/CD pipelines"
+        "Infrastructure/Other - Docker, AWS (ECS/ECR, Fargate, CDK), Shell, CI/CD pipelines, Datadog, Cronitor"
       ]
     },
     {
@@ -55,7 +69,7 @@
         "Proposed & led project: Achieved 2X increase in deployment frequency & eliminated 10 hours per week of manual work by automating monolith deployments and introducing end-to-end testing in CI/CD pipelines using Docker, YAML, shell scripts, AWS CLI and Cloudformation.",
         "Backend - Python, pytest, Java, Spring (MVC), Groovy/Spock, Microsoft SQL Server, AWS Aurora (serverless Postgres)",
         "Frontend - Vue/Vuex, HTML/CSS, JavaScript, Jest",
-        "Infrastructure/Other - Docker, AWS (Lambda, API Gateway, ElasticBeanstalk, CloudFormation, CLI, IAM), Shell, CI/CD pipelines"
+        "Infrastructure/Other - Docker, AWS (Lambda, API Gateway, ElasticBeanstalk, CloudFormation, CLI, IAM), Shell, CI/CD pipelines, Datadog"
       ]
     },
     {
@@ -70,7 +84,7 @@
         "Helped rewrite our software to take advantage of a more distributed system so that we can scale and serve our growing customer base.",
         "Backend - Java, Spring (Boot, JPA, Data, Data REST, MVC), JPA/Hibernate, Groovy/Spock, Microsoft SQL Server along with AWS Redshift",
         "Frontend - HTML/CSS, JSP, JavaScript (ES6, webpack, babel and jQuery), Jest.",
-        "Infrastructure/Other - AWS (EC2, S3, RDS, ElasticBeanstalk)"
+        "Infrastructure/Other - AWS (EC2, S3, RDS, ElasticBeanstalk), New Relic"
       ]
     },
     {
