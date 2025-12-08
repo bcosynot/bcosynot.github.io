@@ -22,7 +22,7 @@
         "url": "https://www.linkedin.com/in/vivekranjan1"
       }
     ],
-    "summary": "Staff Software Engineer with 10+ years track record of leading agile teams and delivering high-impact, scalable, full-stack systems using Python, Java, TypeScript, React, NextJS, and AWS. Enjoys collaborating across teams to solve significant, real-world problems while relentlessly discovering ways to optimize software systems and organizational delivery processes."
+    "summary": "Staff Software Engineer with 10+ years track record of leading agile teams and delivering high-impact, scalable, full-stack systems using Python, Java, TypeScript, React, Next.js, and AWS. Enjoys collaborating across teams to solve significant, real-world problems while relentlessly discovering ways to optimize software systems and organizational delivery processes."
 },
   "work": [
     {
@@ -30,10 +30,11 @@
       "position": "Staff Software Engineer",
       "startDate": "2025-04-18",
       "highlights": [
-        "Built multiple products backed by microservices to increase processing speed for pharmacists to validate prescriptions and benefits.",
+        "Designed event-driven task routing system using microservices to distribute prescription processing failures to pharmacists and technicians based on real-time availability",
+        "Eliminated task loss during agent offline transitions by implementing distributed state management to handle race conditions",
         "Improved database performance leading to 21% reduction in CPU usage, 35% reduction in IOPS and 50% reduction in costs.",
         "Backend - Python, pytest, Django, PostgresSQL",
-        "Frontend - Typescript, NextJS, React, Vite",
+        "Frontend - Typescript, Next.js, React, Vite",
         "Infrastructure/Other - Docker, Kubernetes, AWS (EKS, RDS, SQS/SNS), Shell, CI/CD pipelines, Sentry, Grafana (Prometheus, Loki)"
       ]
     },
@@ -68,17 +69,33 @@
     },
     {
       "company": "FastBridge Learning",
+      "position": "Lead Software Engineer",
+      "website": "https://fastbridge.org",
+      "startDate": "2018-03-01",
+      "endDate": "2019-06-30",
+      "highlights": [
+        "Led project to deliver a web application that provides easy access to millions of data points that help educators understand the performance of all students in a mid-western state.",
+        "Worked with a scrum team to build a datawarehouse in AWS Redshift, a microservice serving REST APIs using Spring Boot, and a JS-based frontend to render data as user-friendly reports."
+      ]
+    },
+    {
+      "company": "FastBridge Learning",
+      "position": "Senior Software Engineer",
+      "website": "https://fastbridge.org",
+      "startDate": "2017-03-01",
+      "endDate": "2018-02-28",
+      "highlights": [
+        "Reduced load time by 98% for a web-based graphical and tabular report used by educators to inform instructional methodology for at-risk students."
+      ]
+    },
+    {
+      "company": "FastBridge Learning",
       "position": "Founding Engineer",
       "website": "https://fastbridge.org",
       "startDate": "2015-06-15",
-      "endDate": "2019-06-30",
+      "endDate": "2017-02-28",
       "highlights": [
-        "4th engineer at Seed-stage startup.",
-        "Led project: Delivered a web application that provides easy access to millions of data points that help educators understand the performance of all students in a mid-western state.",
-        "Worked with the team to build a microservice serving REST APIs using Spring Boot, delivering data from a data-warehouse in AWS Redshift, and a JS-based frontend to render the data as user-friendly reports.",
-        "Backend - Java, Spring (Boot, JPA, Data, Data REST, MVC), JPA/Hibernate, Groovy/Spock, Microsoft SQL Server along with AWS Redshift",
-        "Frontend - HTML/CSS, JSP, JavaScript (ES6, webpack, babel and jQuery), Jest.",
-        "Infrastructure/Other - AWS (EC2, S3, RDS, ElasticBeanstalk), New Relic"
+        "4th engineer at Seed-stage startup that reached $20M ARR and successful exit."
       ]
     }
   ],
@@ -106,7 +123,7 @@
       "keywords": [
         "Typescript",
         "React",
-        "NextJS"
+        "Next.js"
       ]
     },
     {
