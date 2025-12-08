@@ -1,5 +1,17 @@
 # https://vivekranjan.me
-Personal website for Vivek Ranjan. Living at https://vivekranjan.me
+Personal website and resume for Vivek Ranjan. Living at https://vivekranjan.me
 
 
-Build resume with `hackmyresume BUILD resume/resume.json TO resume/resume.html resume/VivekRanjanResume.pdf resume/resume.pdf -t node_modules/jsonresume-theme-short`
+### Resume
+
+#### Preview
+
+```bash
+npm run serve
+```
+
+#### Generate final files
+Build resume with 
+```bash
+npm run generate
+```

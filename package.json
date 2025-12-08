@@ -11,20 +11,17 @@
     "vivek",
     "ranjan"
   ],
+  "type": "module",
+  "private": true,
   "author": "Vivek Ranjan",
   "license": "ISC",
   "homepage": "https://github.com/bcosynot/bcosynot.github.io#readme",
-  "devDependencies": {
-    "bower": "^1.8.8",
-    "browser-sync": "^2.26.7",
-    "gulp": "^4.0.2",
-    "resume-cli": "^1.2.7"
-  },
   "dependencies": {
-    "hackmyresume": "^1.9.0-beta",
-    "jsonresume-theme-short-with-location": "0.0.0"
+    "resumed": "^6.1.0",
+    "my-theme": "file:./jsonresume-theme-short-with-location"
   },
   "scripts": {
-    "generate": "rm ./resume/VivekRanjanResume.pdf ./resume/resume.pdf ./resume/resume.html; hackmyresume BUILD ./resume/resume.json TO ./resume/resume.html ./resume/VivekRanjanResume.pdf ./resume/resume.pdf -t ./jsonresume-theme-short-with-location --pdf weasyprint"
+    "generate": "rm ./resume/VivekRanjanResume.pdf ./resume/resume.pdf ./resume/resume.html; resumed render resume/resume.json --theme my-theme --output resume/resume.html; resumed export resume/resume.json --theme my-theme --output resume/resume.pdf; cp resume/resume.pdf resume/VivekRanjanResume.pdf",
+    "serve": "resumed render resume/resume.json --theme my-theme --output resume/resume.html"
   }
 }
