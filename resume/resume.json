@@ -13,21 +13,16 @@
     "profiles": [
       {
         "network": "GitHub",
-        "username": "/bcosynot",
+        "username": "GitHub",
         "url": "https://github.com/bcosynot"
       },
       {
         "network": "LinkedIn",
         "username": "LinkedIn",
         "url": "https://www.linkedin.com/in/vivekranjan1"
-      },
-      {
-        "network": "book",
-        "username": "Blog",
-        "url": "https://prodlog.makerflow.co/"
       }
     ],
-    "summary": "In here you will notice that (a) I enjoy collaborating and delivering value by solving significant, real world problems with polyglot full-stack software engineering (b) I am backend leaning, but I have also done a fair share of frontend and infrastructure work (c) I am relentlessly discovering ways to optimize software systems and organizational software delivery processes."
+    "summary": "Staff Software Engineer with 10+ years track record of leading agile teams and delivering high-impact, scalable, full-stack systems using Python, Java, TypeScript, React, NextJS, and AWS. Enjoys collaborating across teams to solve significant, real-world problems while relentlessly discovering ways to optimize software systems and organizational delivery processes."
 },
   "work": [
     {
@@ -35,12 +30,11 @@
       "position": "Staff Software Engineer",
       "startDate": "2025-04-18",
       "highlights": [
-        "Built an internal tool to help pharmacists validate prescriptions and benefits",
-        "Ported existing app to NextJS and modern React",
-        "Used observability tools like Sentry, Prometheus, Loki, etc to debug issues during on-call rotations",
-        "Backend - Python, Django, PostgresSQL",
-        "Frontend - NextJS, React, Vite",
-        "Infrastructure/Other - Docker, AWS (EKS, RDS, SQS), Shell, CI/CD pipelines, Sentry, Prometheus, Loki"
+        "Built multiple products backed by microservices to increase processing speed for pharmacists to validate prescriptions and benefits.",
+        "Improved database performance leading to 21% reduction in CPU usage, 35% reduction in IOPS and 50% reduction in costs.",
+        "Backend - Python, pytest, Django, PostgresSQL",
+        "Frontend - Typescript, NextJS, React, Vite",
+        "Infrastructure/Other - Docker, Kubernetes, AWS (EKS, RDS, SQS/SNS), Shell, CI/CD pipelines, Sentry, Grafana (Prometheus, Loki)"
       ]
     },
     {
@@ -51,78 +45,40 @@
       "endDate": "2025-04-15",
       "highlights": [
         "Proposed & led project: Achieved 73% cost reduction by moving batch jobs to AWS Fargate.",
-        "Crafted framework resulting in 40% boost in deployment frequency. Using IaC in Python with AWS CDK and Docker, this framework enabled teams to develop and deploy batch jobs with ease.",
-        "This framework added observability to batch jobs by automatically configuring them with Datadog and Cronitor. Built a custom CDK module for Cronitor monitors.",
-        "Helped with incidents by debugging performance issues in legacy Java monolith using observability tools like Datadog",
+        "Created an IaC framework (Python, AWS CDK, Docker) that raised deployment frequency by 40% and streamlined batch‑job development for all teams.",
+        "Mentored multiple engineers leading to their promotions and improvement of their technical skills.",
         "Backend - Python, pytest, Java, Spring (MVC), Groovy/Spock, Microsoft SQL Server",
         "Frontend - Vue/Vuex, HTML/CSS, JavaScript, Jest",
-        "Infrastructure/Other - Docker, AWS (ECS/ECR, Fargate, CDK), Shell, CI/CD pipelines, Datadog, Cronitor"
+        "Infrastructure/Other - Docker, AWS (ECS/ECR, Fargate, CDK, RDS, Aurora Serverless), Shell, CI/CD pipelines, Datadog, Cronitor"
       ]
     },
     {
+      "company": "Renaissance Learning",
       "position": "Lead Software Engineer",
       "startDate": "2019-07-01",
       "endDate": "2022-03-01",
       "highlights": [
         "Led project: UX redesign implementation of crucial progress monitoring tool used by educators and millions of students. Modernized frontend (Vue, Vuex, Jest) and optimized backend (Java, Spring, REST, Hibernate, MS SQL Server, Groovy/Spock).",
-        "Proposed & led project: Eliminated 4 weeks per year of engineering time by developing a content management system using AWS Aurora serverless (Postgres), Lambdas, API Gateway, Vue, Vuex, and Jest.",
-        "Proposed & led project: Achieved 2X increase in deployment frequency & eliminated 10 hours per week of manual work by automating monolith deployments and introducing end-to-end testing in CI/CD pipelines using Docker, YAML, shell scripts, AWS CLI and Cloudformation.",
+        "Proposed & led project: Reduced engineering effort by 4 weeks annually by building a microservice driven content‑management system on AWS Aurora Serverless, Lambda, and API Gateway with a Vue front‑end.",
+        "Proposed & led project: Doubled deployment frequency and saved 10 hrs/week by automating monolith deployments and adding end‑to‑end CI/CD tests with Docker and CloudFormation",
         "Backend - Python, pytest, Java, Spring (MVC), Groovy/Spock, Microsoft SQL Server, AWS Aurora (serverless Postgres)",
         "Frontend - Vue/Vuex, HTML/CSS, JavaScript, Jest",
-        "Infrastructure/Other - Docker, AWS (Lambda, API Gateway, ElasticBeanstalk, CloudFormation, CLI, IAM), Shell, CI/CD pipelines, Datadog"
+        "Infrastructure/Other - Docker, AWS (Lambda, API Gateway, ElasticBeanstalk, CloudFormation, IAM, RDS, Aurora Serverless), Shell, CI/CD pipelines, Datadog"
       ]
     },
     {
       "company": "FastBridge Learning",
-      "position": "Technical Team Lead / Senior Software Engineer",
+      "position": "Founding Engineer",
       "website": "https://fastbridge.org",
-      "startDate": "2017-03-15",
+      "startDate": "2015-06-15",
       "endDate": "2019-06-30",
       "highlights": [
+        "4th engineer at Seed-stage startup.",
         "Led project: Delivered a web application that provides easy access to millions of data points that help educators understand the performance of all students in a mid-western state.",
         "Worked with the team to build a microservice serving REST APIs using Spring Boot, delivering data from a data-warehouse in AWS Redshift, and a JS-based frontend to render the data as user-friendly reports.",
-        "Helped rewrite our software to take advantage of a more distributed system so that we can scale and serve our growing customer base.",
         "Backend - Java, Spring (Boot, JPA, Data, Data REST, MVC), JPA/Hibernate, Groovy/Spock, Microsoft SQL Server along with AWS Redshift",
         "Frontend - HTML/CSS, JSP, JavaScript (ES6, webpack, babel and jQuery), Jest.",
         "Infrastructure/Other - AWS (EC2, S3, RDS, ElasticBeanstalk), New Relic"
-      ]
-    },
-    {
-      "position": "Software Engineer",
-      "website": "https://fastbridge.org",
-      "startDate": "2015-06-15",
-      "endDate": "2017-03-15",
-      "highlights": [
-        "4th engineer at an early-stage EdTech startup (~10 employees). Developed features end-to-end to help educators understand needs of millions of students in reading and math.",
-        "Backend - Java, Spring (MVC), JPA/Hibernate, Microsoft SQL Server",
-        "Frontend - HTML/CSS, JSP, JavaScript, jQuery",
-        "Infrastructure - AWS (EC2, S3, RDS, ElasticBeanstalk)"
-      ]
-    },
-    {
-      "company": "University of Minnesota",
-      "position": "Full Stack Software Engineer (Part-time)",
-      "startDate": "2014-01-09",
-      "endDate": "2015-05-24",
-      "highlights": [
-        "Using Java (Spring MVC) with HTML/CSS/JS, jQuery, and Microsoft SQL server, I added features to an existing web app to assess the reading abilities of 1000s of students and track their progress",
-        "Helped researchers in the Department of Educational Psychology design effective assessments for students.",
-        "Backend - Java, Spring (MVC), JPA/Hibernate, Microsoft SQL Server",
-        "Frontend - HTML/CSS, JSP, JavaScript, jQuery",
-        "Infrastructure - AWS (EC2, S3, RDS, ElasticBeanstalk)"
-      ]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "Astoria Digital",
-      "position": "Community Engineer",
-      "website": "https://astoria.digital/",
-      "startDate": "2020-04-01",
-      "endDate": "2020-09-01",
-      "highlights": [
-        "Helped build an open-source volunteer coordination and dispatch system in use by Astoria Mutual Aid Network - https://github.com/astoria-tech/volunteer-dispatch",
-        "Built a system that helps community organizers keep track of waiting times at COVID testing sites in NYC - https://github.com/astoria-tech/nyc-covid19-testing-wait-times"
       ]
     }
   ],
@@ -131,6 +87,7 @@
       "institution": "University of Minnesota",
       "area": "Computer Science",
       "studyType": "Master of Science",
+      "startDate": "2013-08-01",
       "endDate": "2016-12-20"
     }
   ],
@@ -138,33 +95,33 @@
     {
       "name": "Backend",
       "keywords": [
-        "Java",
-        "NodeJS",
         "Python",
-        "PHP",
+        "NodeJS",
+        "Java",
         "SQL (MS SQL Server, Postgres)"
       ]
     },
     {
       "name": "Frontend",
       "keywords": [
-        "HTML/CSS",
-        "JavaScript",
         "Typescript",
         "React",
-        "Redux",
-        "Vue",
-        "Vuex",
-        "Jest"
+        "NextJS"
       ]
     },
     {
       "name": "Infrastructure/Other",
       "keywords": [
-        "Shell scripting",
+        "Agentic AI Coding (Cursor, Claude Code, Junie, etc)",
+        "AWS (Lambda, API Gateway, SQS/SNS, ECS, ECR, Fargate, ElasticBeanstalk, Cloudformation, CDK, S3, EC2, RDS, IAM, etc)",
+        "Datadog",
+        "Grafana (Loki, Prometheus, etc)",
+        "CI/CD pipelines",
         "Docker",
-        "AWS (Lambda, API Gateway, ECS, ECR, Fargate, ElasticBeanstalk, Cloudformation, CDK, S3, EC2, RDS, IAM, etc)",
-        "CI/CD pipelines"
+        "Kubernetes (kubectl, Helm, k9s, etc)",
+        "Agile",
+        "Scrum",
+        "Shell"
       ]
     }
   ]

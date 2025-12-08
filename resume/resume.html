@@ -1,448 +1,364 @@
 <!doctype html>
 <html>
-    
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-        <title>Vivek Ranjan</title>
-        <style>
-            body {
-            	background: #fff;
-            	font: 16px 'Open Sans', Helvetica, Arial, sans-serif;
-            	line-height: 1.4;
-            	margin: 0 0;
-            	margin-bottom: 100px;
-            }
-            em {
-            	color: #999;
-            }
-            p {
-            	line-height: 1.6;
-            	font-size: 90%;
-            }
-            
-            a {
-            	color: #2C85B1;
-            	text-decoration: none;
-            	font-weight: 400;
-            }
-            ul {
-            	margin-bottom: 0;
-            }
-            section {
-            	margin: 0;
-            }
-            blockquote {
-            	margin: 0;
-            	margin-bottom: 1em;
-            }
-            #resume {
-            	margin: 1.2em;
-            	max-width: 780px;
-            }
-            
-            /* Resume heading */
-            .heading header {
-            
-            }
-            
-            .heading header h1 {
-            	font-size: 160%;
-            	margin: 0.5em 0;
-            	font-weight: 600;
-            }
-            
-            .heading header h2 {
-            	font-size: 120%;
-            	margin: 0;
-            	font-weight: 400;
-            }
-            
-            .heading header .contact .detail {
-            	margin: 0 1em 0 0;
-            }
-            
-            .profile {
-            	display: inline-block;
-            	margin: 0 1em 0 0;
-            }
-            
-            .profile strong,
-            .profile span {
-            	display: inline-block;
-            	margin: 0 1em 0 0;
-            }
-            /* section / line breaks */
-            section h2 {
-            	font-size: 140%;
-            	margin: 0;
-            	text-transform: uppercase;
-            	color: #BC1B39;
-            	font-weight: 400;
-            }
-            
-            /* Experience items */
-            .item {
-            	margin: 0 0 1em;
-            	padding: 0 0 1em;
-            	border-bottom: 1px solid #F2EBEC;
-            }
-            
-            .item:last-child {
-            	border-bottom: none;
-            }
-            
-            
-            .item header h3 {
-            	margin: 0.2em 1em 0.2em 0;
-            	display: inline-block;
-            	font-weight: 600;
-            }
-            
-            .item header a {
-            	display: inline-block;
-            }
-            
-            .item .position {
-            	font-weight: 600;
-            	font-size: 100%;
-            	margin: 0.2em 1em 0.2em 0;
-            }
-            
-            .item .startDate,
-            .item .endDate {
-            	color: #6B6B6B;
-            }
-            
-            .item .startDate {
-            	float: right;
-            	width: 4.5rem;
-            }
-            
-            .item .endDate {
-            	float: right;
-            	width: 5rem;
-            }
-            
-            .item .highlights {
-            	list-style: square;
-            	font-size: 90%;
-            	padding-inline-start: 1em;
-            }
-            
-            /* skills */
-            #skills .item {
-            	margin: 0.5em 0;
-            	padding: 0 0 0.5em;
-            	font-size: 90%;
-            }
-            
-            #skills .item .name {
-            	font-weight: 600;
-            	display: inline-block;
-            	text-transform: uppercase;
-            	margin: 0;
-            	width: 20%;
-            	vertical-align: top;
-            }
-            
-            #skills .item .keywords {
-            	display: inline-block;
-            	width: 79%;
-            	vertical-align: top;
-            }
-            
-            /* education */
-            #education .item {
-            	display: inline-block;
-            	vertical-align: top;
-            	width: 49.5%;
-            	border-bottom: 0;
-            }
-        </style>
-        <style media="print">
-            body { font-size: 14px; }
-        </style>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300'
-        rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    </head>
-    
-    <body>
-        <div id="resume">
-            <section class="heading">
-                <header>
-                    	<h1>Vivek Ranjan</h1>
+	<head>
 
-                    <div class="contact"> <span class="detail">
-                    New York, New York
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+
+	<title>Vivek Ranjan</title>
+
+	<style>
+	body {
+    background: #fff;
+    font: 16px 'Open Sans', Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    margin: 0 0;
+    margin-bottom: 100px;
+    /* Improve ATS parsing by disabling ligatures */
+    text-rendering: optimizeSpeed;
+}
+em {
+	color: #999;
+}
+p {
+	line-height: 1.6;
+	font-size: 90%;
+}
+
+a {
+	color: #2C85B1;
+	text-decoration: none;
+	font-weight: 400;
+}
+ul {
+	margin-bottom: 0;
+}
+section {
+	margin: 0;
+}
+blockquote {
+	margin: 0;
+	margin-bottom: 1em;
+}
+#resume {
+	margin: 1.2em;
+	max-width: 780px;
+}
+
+/* Resume heading */
+.heading header {
+
+}
+
+.heading header h1 {
+	font-size: 160%;
+	margin: 0.5em 0;
+	font-weight: 600;
+}
+
+.heading header h2 {
+	font-size: 120%;
+	margin: 0;
+	font-weight: 400;
+}
+
+.heading header .contact .detail {
+	margin: 0 1em 0 0;
+}
+
+.profile {
+	display: inline-block;
+	margin: 0 1em 0 0;
+}
+
+.profile strong,
+.profile span {
+	display: inline-block;
+	margin: 0 1em 0 0;
+}
+/* section / line breaks */
+section h2 {
+	font-size: 140%;
+	margin: 0;
+	text-transform: uppercase;
+	color: #BC1B39;
+	font-weight: 400;
+    border-bottom: 1px solid #F2EBEC;
+}
+
+/* Experience items */
+.item {
+	margin: 0 0 1em;
+	padding: 0 0 1em;
+	border-bottom: 1px solid #F2EBEC;
+}
+
+.item:last-child {
+	border-bottom: none;
+}
+
+
+.item header h3 {
+	margin: 0.2em 1em 0.2em 0;
+	display: inline-block;
+	font-weight: 600;
+}
+
+.item header a {
+	display: inline-block;
+}
+
+.item .position {
+	font-weight: 600;
+	font-size: 100%;
+	margin: 0.2em 1em 0.2em 0;
+}
+
+.item .startDate,
+.item .endDate {
+	color: #6B6B6B;
+}
+
+.item .startDate {
+	/*float: right;*/
+	width: 4.5rem;
+}
+
+.item .endDate {
+	/*float: right;*/
+	width: 5rem;
+}
+
+.item .highlights {
+	font-size: 90%;
+	padding-inline-start: 1em;
+}
+
+/* skills */
+#skills .item {
+	margin: 0.5em 0;
+	padding: 0 0 0.5em;
+	font-size: 90%;
+}
+
+#skills .item .name {
+	font-weight: 600;
+	display: block;
+	text-transform: uppercase;
+	margin: 0 0 0.3em;
+	width: auto;
+	vertical-align: top;
+}
+
+#skills .item .keywords {
+	display: block;
+	width: auto;
+	vertical-align: top;
+}
+
+/* education - ensure single column for ATS */
+#education .item {
+    display: block;
+    width: 100%;
+    border-bottom: 0;
+}
+
+
+
+/* Remove right alignment and labels from Work Experience dates */
+/* Intentionally left minimal to inherit default flow layout */
+
+	</style>
+	<style media="print">
+		body { font-size: 14px; }
+	</style>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+	</head>
+	<body>
+
+	<div id="resume">
+
+ <section class="heading" role="region" aria-label="Header">
+        <header>
+            <h1>Vivek Ranjan</h1>
+            <div class="contact" role="contentinfo">
+                    <span class="detail">
+                    <span class="label">City:</span>
+                    <span aria-label="Location">New York, New York</span>
                     </span>
-
-                        <br />	<span class="detail">
-					<a href="mailto:vivek@vivekranjan.me">vivek@vivekranjan.me</a>
-				</span>
-	<span class="detail">
-					<a href="https://vivekranjan.me">https://vivekranjan.me</a>
-				</span>
- <span class="detail">
-                        <a href="https://github.com/bcosynot"><i class="lab la-github"></i></a>
-                            <a href="https://github.com/bcosynot">/bcosynot</a>
-                        </span>
- <span class="detail">
-                        <a href="https://www.linkedin.com/in/vivekranjan1"><i class="lab la-linkedin"></i></a>
-                            <a href="https://www.linkedin.com/in/vivekranjan1">LinkedIn</a>
-                        </span>
- <span class="detail">
-                        <a href="https://prodlog.makerflow.co/"><i class="lab la-book"></i></a>
-                            <a href="https://prodlog.makerflow.co/">Blog</a>
-                        </span>
-
-                    </div>
-                </header>
-                <p>
-                    <p>In here you will notice that (a) I enjoy collaborating and delivering
-                        value by solving significant, real world problems with polyglot full-stack
-                        software engineering (b) I am backend leaning, but I have also done a fair
-                        share of frontend and infrastructure work (c) I am relentlessly discovering
-                        ways to optimize software systems and organizational software delivery
-                        processes.</p>
-                </p>
-            </section>
-            <section id="skills">
-                	<h2>Skills</h2>
-
-                <div class="item">
-                    <div class="name">Backend</div>
-                    <div class="keywords">Java, NodeJS, Python, PHP, SQL (MS SQL Server, Postgres)</div>
-                </div>
-                <div class="item">
-                    <div class="name">Frontend</div>
-                    <div class="keywords">HTML/CSS, JavaScript, Typescript, React, Redux, Vue, Vuex, Jest</div>
-                </div>
-                <div class="item">
-                    <div class="name">Infrastructure/Other</div>
-                    <div class="keywords">Shell scripting, Docker, AWS (Lambda, API Gateway, ECS, ECR, Fargate,
-                        ElasticBeanstalk, Cloudformation, CDK, S3, EC2, RDS, IAM, etc), CI/CD pipelines</div>
-                </div>
-            </section>
-            <section class="experience">
-                	<h2>Experience</h2>
-
-                <section class="item">
-                    <header>
-                        	<h3 class="name">Capsule</h3>
-
-                    </header>	<span class="position">
-				Staff Software Engineer
-			</span>
-	<span class="endDate">
-				- Present
-			</span>
- <span class="startDate">
-                Apr 2025
-            </span>
-
-                    <ul class="highlights">
-                        <li>Built an internal tool to help pharmacists validate prescriptions and
-                            benefits</li>
-                        <li>Ported existing app to NextJS and modern React</li>
-                        <li>Used observability tools like Sentry, Prometheus, Loki, etc to debug issues
-                            during on-call rotations</li>
-                        <li>Backend - Python, Django, PostgresSQL</li>
-                        <li>Frontend - NextJS, React, Vite</li>
-                        <li>Infrastructure/Other - Docker, AWS (EKS, RDS, SQS), Shell, CI/CD pipelines,
-                            Sentry, Prometheus, Loki</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <header>
-                        	<h3 class="name">Renaissance Learning</h3>
-
-                    </header>	<span class="position">
-				Staff Software Engineer
-			</span>
-	<span class="endDate">
-				- Apr 2025
-			</span>
- <span class="startDate">
-                Feb 2022
-            </span>
-
-                    <ul class="highlights">
-                        <li>Proposed &amp; led project: Achieved 73% cost reduction by moving batch
-                            jobs to AWS Fargate.</li>
-                        <li>Crafted framework resulting in 40% boost in deployment frequency. Using
-                            IaC in Python with AWS CDK and Docker, this framework enabled teams to
-                            develop and deploy batch jobs with ease.</li>
-                        <li>This framework added observability to batch jobs by automatically configuring
-                            them with Datadog and Cronitor. Built a custom CDK module for Cronitor
-                            monitors.</li>
-                        <li>Helped with incidents by debugging performance issues in legacy Java monolith
-                            using observability tools like Datadog</li>
-                        <li>Backend - Python, pytest, Java, Spring (MVC), Groovy/Spock, Microsoft
-                            SQL Server</li>
-                        <li>Frontend - Vue/Vuex, HTML/CSS, JavaScript, Jest</li>
-                        <li>Infrastructure/Other - Docker, AWS (ECS/ECR, Fargate, CDK), Shell, CI/CD
-                            pipelines, Datadog, Cronitor</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <header></header>	<span class="position">
-				Lead Software Engineer
-			</span>
-	<span class="endDate">
-				- Feb 2022
-			</span>
- <span class="startDate">
-                Jun 2019
-            </span>
-
-                    <ul class="highlights">
-                        <li>Led project: UX redesign implementation of crucial progress monitoring
-                            tool used by educators and millions of students. Modernized frontend (Vue,
-                            Vuex, Jest) and optimized backend (Java, Spring, REST, Hibernate, MS SQL
-                            Server, Groovy/Spock).</li>
-                        <li>Proposed &amp; led project: Eliminated 4 weeks per year of engineering
-                            time by developing a content management system using AWS Aurora serverless
-                            (Postgres), Lambdas, API Gateway, Vue, Vuex, and Jest.</li>
-                        <li>Proposed &amp; led project: Achieved 2X increase in deployment frequency
-                            &amp; eliminated 10 hours per week of manual work by automating monolith
-                            deployments and introducing end-to-end testing in CI/CD pipelines using
-                            Docker, YAML, shell scripts, AWS CLI and Cloudformation.</li>
-                        <li>Backend - Python, pytest, Java, Spring (MVC), Groovy/Spock, Microsoft
-                            SQL Server, AWS Aurora (serverless Postgres)</li>
-                        <li>Frontend - Vue/Vuex, HTML/CSS, JavaScript, Jest</li>
-                        <li>Infrastructure/Other - Docker, AWS (Lambda, API Gateway, ElasticBeanstalk,
-                            CloudFormation, CLI, IAM), Shell, CI/CD pipelines, Datadog</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <header>
-                        	<h3 class="name">FastBridge Learning</h3>
-
-                    </header>	<span class="position">
-				Technical Team Lead / Senior Software Engineer
-			</span>
-	<span class="endDate">
-				- Jun 2019
-			</span>
- <span class="startDate">
-                Mar 2017
-            </span>
-
-                    <ul class="highlights">
-                        <li>Led project: Delivered a web application that provides easy access to
-                            millions of data points that help educators understand the performance
-                            of all students in a mid-western state.</li>
-                        <li>Worked with the team to build a microservice serving REST APIs using Spring
-                            Boot, delivering data from a data-warehouse in AWS Redshift, and a JS-based
-                            frontend to render the data as user-friendly reports.</li>
-                        <li>Helped rewrite our software to take advantage of a more distributed system
-                            so that we can scale and serve our growing customer base.</li>
-                        <li>Backend - Java, Spring (Boot, JPA, Data, Data REST, MVC), JPA/Hibernate,
-                            Groovy/Spock, Microsoft SQL Server along with AWS Redshift</li>
-                        <li>Frontend - HTML/CSS, JSP, JavaScript (ES6, webpack, babel and jQuery),
-                            Jest.</li>
-                        <li>Infrastructure/Other - AWS (EC2, S3, RDS, ElasticBeanstalk), New Relic</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <header></header>	<span class="position">
-				Software Engineer
-			</span>
-	<span class="endDate">
-				- Mar 2017
-			</span>
- <span class="startDate">
-                Jun 2015
-            </span>
-
-                    <ul class="highlights">
-                        <li>4th engineer at an early-stage EdTech startup (~10 employees). Developed
-                            features end-to-end to help educators understand needs of millions of students
-                            in reading and math.</li>
-                        <li>Backend - Java, Spring (MVC), JPA/Hibernate, Microsoft SQL Server</li>
-                        <li>Frontend - HTML/CSS, JSP, JavaScript, jQuery</li>
-                        <li>Infrastructure - AWS (EC2, S3, RDS, ElasticBeanstalk)</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <header>
-                        	<h3 class="name">University of Minnesota</h3>
-
-                    </header>	<span class="position">
-				Full Stack Software Engineer (Part-time)
-			</span>
-	<span class="endDate">
-				- May 2015
-			</span>
- <span class="startDate">
-                Jan 2014
-            </span>
-
-                    <ul class="highlights">
-                        <li>Using Java (Spring MVC) with HTML/CSS/JS, jQuery, and Microsoft SQL server,
-                            I added features to an existing web app to assess the reading abilities
-                            of 1000s of students and track their progress</li>
-                        <li>Helped researchers in the Department of Educational Psychology design
-                            effective assessments for students.</li>
-                        <li>Backend - Java, Spring (MVC), JPA/Hibernate, Microsoft SQL Server</li>
-                        <li>Frontend - HTML/CSS, JSP, JavaScript, jQuery</li>
-                        <li>Infrastructure - AWS (EC2, S3, RDS, ElasticBeanstalk)</li>
-                    </ul>
-                </section>
-            </section>
-            <section id="education">
-                	<h2>Education</h2>
-
-                <div class="item">
-                    <header>
-                        	<h3 class="name">University of Minnesota</h3>
-
-                    </header>
-                    <div class="dates">	<span class="endDate">
-					Dec 2016
-				</span>
-
-                    </div>
-                    <div class="qualification">	<span class="studyType">
-					Master of Science
-				</span>
-	<span class="area">
-					- Computer Science
-				</span>
-
-                    </div>
-                </div>
-            </section>
-            <section class="experience">
-                	<h2>Volunteering</h2>
-
-                <div class="item">
-                    <header>
-                        	<h3 class="name">Astoria Digital</h3>
-
-                    </header>	<span class="position">
-    				Community Engineer
-    			</span>
-	<span class="endDate">
-    				- Aug 2020
-    			</span>
- <span class="startDate">
-                    Mar 2020
+                <br />
+                <span class="detail">
+                    <span class="label">Email:</span>
+                    <a href="mailto:vivek@vivekranjan.me" aria-label="Email">vivek@vivekranjan.me</a>
                 </span>
+                    <span class="detail">
+                        <a href="https://github.com/bcosynot" aria-label="Profile GitHub">https://github.com/bcosynot</a>
+                    </span>
+                    <span class="detail">
+                        <a href="https://www.linkedin.com/in/vivekranjan1" aria-label="Profile LinkedIn">https://www.linkedin.com/in/vivekranjan1</a>
+                    </span>
+            </div>
+        </header>
 
-                    <ul class="highlights">
-                        <li>Helped build an open-source volunteer coordination and dispatch system
-                            in use by Astoria Mutual Aid Network - <a href="https://github.com/astoria-tech/volunteer-dispatch">https://github.com/astoria-tech/volunteer-dispatch</a>
-                        </li>
-                        <li>Built a system that helps community organizers keep track of waiting times
-                            at COVID testing sites in NYC - <a href="https://github.com/astoria-tech/nyc-covid19-testing-wait-times">https://github.com/astoria-tech/nyc-covid19-testing-wait-times</a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+
+  <div class="summary"><p>Staff Software Engineer with 10+ years track record of leading agile teams and delivering high-impact, scalable, full-stack systems using Python, Java, TypeScript, React, NextJS, and AWS. Enjoys collaborating across teams to solve significant, real-world problems while relentlessly discovering ways to optimize software systems and organizational delivery processes.</p></div>
+
+	</section>
+
+ <section id="skills" role="region" aria-label="Skills">
+     <h2>Skills</h2>
+     <div class="item">
+         <div class="name">
+				Backend
+			</div>
+			<div class="keywords">
+					Python,
+					NodeJS,
+					Java,
+					SQL (MS SQL Server, Postgres)
+			</div>
+		</div>
+     <div class="item">
+         <div class="name">
+				Frontend
+			</div>
+			<div class="keywords">
+					Typescript,
+					React,
+					NextJS
+			</div>
+		</div>
+     <div class="item">
+         <div class="name">
+				Infrastructure/Other
+			</div>
+			<div class="keywords">
+					Agentic AI Coding (Cursor, Claude Code, Junie, etc),
+					AWS (Lambda, API Gateway, SQS/SNS, ECS, ECR, Fargate, ElasticBeanstalk, Cloudformation, CDK, S3, EC2, RDS, IAM, etc),
+					Datadog,
+					Grafana (Loki, Prometheus, etc),
+					CI/CD pipelines,
+					Docker,
+					Kubernetes (kubectl, Helm, k9s, etc),
+					Agile,
+					Scrum,
+					Shell
+			</div>
+		</div>
+	</section>
+
+ <section class="experience" role="region" aria-label="Work Experience">
+     <h2>Work Experience</h2>
+     <article class="item" itemscope itemtype="https://schema.org/WorkExperience">
+         <header>
+                <h3 class="position" itemprop="jobTitle">Staff Software Engineer</h3>
+                <div class="name" itemprop="name">Capsule</div>
+            <div class="dates">
+                <span class="startDate" itemprop="startDate">April 2025</span>
+                <span class="separator"> - </span>
+                <span class="endDate" itemprop="endDate">Present</span>
+            </div>
+         </header>
+
+            <ul class="highlights">
+                <li>Built multiple products backed by microservices to increase processing speed for pharmacists to validate prescriptions and benefits.</li>
+                <li>Improved database performance leading to 21% reduction in CPU usage, 35% reduction in IOPS and 50% reduction in costs.</li>
+                <li>Backend - Python, pytest, Django, PostgresSQL</li>
+                <li>Frontend - Typescript, NextJS, React, Vite</li>
+                <li>Infrastructure/Other - Docker, Kubernetes, AWS (EKS, RDS, SQS/SNS), Shell, CI/CD pipelines, Sentry, Grafana (Prometheus, Loki)</li>
+            </ul>
+        </article>
+     <article class="item" itemscope itemtype="https://schema.org/WorkExperience">
+         <header>
+                <h3 class="position" itemprop="jobTitle">Staff Software Engineer</h3>
+                <div class="name" itemprop="name">Renaissance Learning</div>
+            <div class="dates">
+                <span class="startDate" itemprop="startDate">February 2022</span>
+                <span class="separator"> - </span>
+                <span class="endDate" itemprop="endDate">April 2025</span>
+            </div>
+         </header>
+
+            <ul class="highlights">
+                <li>Proposed &amp; led project: Achieved 73% cost reduction by moving batch jobs to AWS Fargate.</li>
+                <li>Created an IaC framework (Python, AWS CDK, Docker) that raised deployment frequency by 40% and streamlined batch‑job development for all teams.</li>
+                <li>Mentored multiple engineers leading to their promotions and improvement of their technical skills.</li>
+                <li>Backend - Python, pytest, Java, Spring (MVC), Groovy/Spock, Microsoft SQL Server</li>
+                <li>Frontend - Vue/Vuex, HTML/CSS, JavaScript, Jest</li>
+                <li>Infrastructure/Other - Docker, AWS (ECS/ECR, Fargate, CDK, RDS, Aurora Serverless), Shell, CI/CD pipelines, Datadog, Cronitor</li>
+            </ul>
+        </article>
+     <article class="item" itemscope itemtype="https://schema.org/WorkExperience">
+         <header>
+                <h3 class="position" itemprop="jobTitle">Lead Software Engineer</h3>
+                <div class="name" itemprop="name">Renaissance Learning</div>
+            <div class="dates">
+                <span class="startDate" itemprop="startDate">June 2019</span>
+                <span class="separator"> - </span>
+                <span class="endDate" itemprop="endDate">February 2022</span>
+            </div>
+         </header>
+
+            <ul class="highlights">
+                <li>Led project: UX redesign implementation of crucial progress monitoring tool used by educators and millions of students. Modernized frontend (Vue, Vuex, Jest) and optimized backend (Java, Spring, REST, Hibernate, MS SQL Server, Groovy/Spock).</li>
+                <li>Proposed &amp; led project: Reduced engineering effort by 4 weeks annually by building a microservice driven content‑management system on AWS Aurora Serverless, Lambda, and API Gateway with a Vue front‑end.</li>
+                <li>Proposed &amp; led project: Doubled deployment frequency and saved 10 hrs/week by automating monolith deployments and adding end‑to‑end CI/CD tests with Docker and CloudFormation</li>
+                <li>Backend - Python, pytest, Java, Spring (MVC), Groovy/Spock, Microsoft SQL Server, AWS Aurora (serverless Postgres)</li>
+                <li>Frontend - Vue/Vuex, HTML/CSS, JavaScript, Jest</li>
+                <li>Infrastructure/Other - Docker, AWS (Lambda, API Gateway, ElasticBeanstalk, CloudFormation, IAM, RDS, Aurora Serverless), Shell, CI/CD pipelines, Datadog</li>
+            </ul>
+        </article>
+     <article class="item" itemscope itemtype="https://schema.org/WorkExperience">
+         <header>
+                <h3 class="position" itemprop="jobTitle">Founding Engineer</h3>
+                <div class="name" itemprop="name">FastBridge Learning</div>
+            <div class="dates">
+                <span class="startDate" itemprop="startDate">June 2015</span>
+                <span class="separator"> - </span>
+                <span class="endDate" itemprop="endDate">June 2019</span>
+            </div>
+         </header>
+
+            <ul class="highlights">
+                <li>4th engineer at Seed-stage startup.</li>
+                <li>Led project: Delivered a web application that provides easy access to millions of data points that help educators understand the performance of all students in a mid-western state.</li>
+                <li>Worked with the team to build a microservice serving REST APIs using Spring Boot, delivering data from a data-warehouse in AWS Redshift, and a JS-based frontend to render the data as user-friendly reports.</li>
+                <li>Backend - Java, Spring (Boot, JPA, Data, Data REST, MVC), JPA/Hibernate, Groovy/Spock, Microsoft SQL Server along with AWS Redshift</li>
+                <li>Frontend - HTML/CSS, JSP, JavaScript (ES6, webpack, babel and jQuery), Jest.</li>
+                <li>Infrastructure/Other - AWS (EC2, S3, RDS, ElasticBeanstalk), New Relic</li>
+            </ul>
+        </article>
+    </section>
+
+ <section id="education" role="region" aria-label="Education">
+     <h2>Education</h2>
+     <div class="item" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+         <header>
+                 <h3 class="position" itemprop="educationalLevel">
+                     Master of Science, Computer Science
+                 </h3>
+
+                 <div class="name" itemprop="recognizedBy">University of Minnesota</div>
+
+             <div class="dates">
+                 <span class="startDate" itemprop="validFrom">2013</span>
+                 <span class="separator"> - </span>
+                 <span class="endDate" itemprop="validThrough">2016</span>
+             </div>
+         </header>
         </div>
-    </body>
+    </section>
 
+
+
+
+
+
+
+	</div>
+
+	</body>
 </html>
