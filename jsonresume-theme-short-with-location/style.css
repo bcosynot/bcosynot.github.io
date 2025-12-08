@@ -1,9 +1,11 @@
 body {
-	background: #fff;
-	font: 16px 'Open Sans', Helvetica, Arial, sans-serif;
-	line-height: 1.4;
-	margin: 0 0;
-	margin-bottom: 100px;
+    background: #fff;
+    font: 16px 'Open Sans', Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    margin: 0 0;
+    margin-bottom: 100px;
+    /* Improve ATS parsing by disabling ligatures */
+    text-rendering: optimizeSpeed;
 }
 em {
 	color: #999;
@@ -71,6 +73,7 @@ section h2 {
 	text-transform: uppercase;
 	color: #BC1B39;
 	font-weight: 400;
+    border-bottom: 1px solid #F2EBEC;
 }
 
 /* Experience items */
@@ -107,17 +110,16 @@ section h2 {
 }
 
 .item .startDate {
-	float: right;
+	/*float: right;*/
 	width: 4.5rem;
 }
 
 .item .endDate {
-	float: right;
+	/*float: right;*/
 	width: 5rem;
 }
 
 .item .highlights {
-	list-style: square;
 	font-size: 90%;
 	padding-inline-start: 1em;
 }
@@ -131,25 +133,27 @@ section h2 {
 
 #skills .item .name {
 	font-weight: 600;
-	display: inline-block;
+	display: block;
 	text-transform: uppercase;
-	margin: 0;
-	width: 20%;
+	margin: 0 0 0.3em;
+	width: auto;
 	vertical-align: top;
 }
 
 #skills .item .keywords {
-	display: inline-block;
-	width: 79%;
+	display: block;
+	width: auto;
 	vertical-align: top;
 }
 
-/* education */
+/* education - ensure single column for ATS */
 #education .item {
-	display: inline-block;
-	vertical-align: top;
-	width: 49.5%;
-	border-bottom: 0;
+    display: block;
+    width: 100%;
+    border-bottom: 0;
 }
 
 
+
+/* Remove right alignment and labels from Work Experience dates */
+/* Intentionally left minimal to inherit default flow layout */

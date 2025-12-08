@@ -23,67 +23,57 @@
 	<div id="resume">
 
 	{{#resume.basics}}
-	<section class="heading">
-		<header>
-			<h1>{{name}}</h1>
-			<div class="contact">
+ <section class="heading" role="region" aria-label="Header">
+        <header>
+            <h1>{{name}}</h1>
+            <div class="contact" role="contentinfo">
                 {{#if location.city}}
                     <span class="detail">
-                    {{location.city}}, {{location.region}}
+                    <span class="label">City:</span>
+                    <span aria-label="Location">{{location.city}}{{#if location.region}}, {{location.region}}{{/if}}</span>
                     </span>
                 {{/if}}
-				<br />
-				{{#if email}}
-				<span class="detail">
-					<a href="mailto:{{email}}">{{email}}</a>
-				</span>
-				{{/if}}
-				{{#if phone}}
-				<span class="detail">
-					{{phone}}
-				</span>
-				{{/if}}
-				{{#if website}}
-				<span class="detail">
-					<a href="{{website}}">{{website}}</a>
-				</span>
-				{{#if profiles.length}}
-                        {{#each profiles}}
-                        <span class="detail">
-                        {{#if network}}
-                        {{#if url}}
-                        <a href="{{url}}">{{socialIcon network}}</a>
-                        {{/if}}
-                        {{/if}}
-                        {{#if username}}
-                            {{#if url}}
-                            <a href="{{url}}">{{username}}</a>
-                            {{else}}
-                            {{username}}
-                            {{/if}}
-                        {{/if}}
-                        </span>
-                        {{/each}}
+                <br />
+                {{#if email}}
+                <span class="detail">
+                    <span class="label">Email:</span>
+                    <a href="mailto:{{email}}" aria-label="Email">{{email}}</a>
+                </span>
+                {{/if}}
+                {{#if phone}}
+                <span class="detail">
+                    <span aria-label="Phone">{{phone}}</span>
+                </span>
+                {{/if}}
+                {{#if profiles.length}}
+                    {{#each profiles}}
+                    <span class="detail">
+                    {{#if network}}
+                    {{#if url}}
+                        <a href="{{url}}" aria-label="Profile {{network}}">{{url}}</a>
                     {{/if}}
-				{{/if}}
-			</div>
-		</header>
+                    {{/if}}
+                    </span>
+                    {{/each}}
+                {{/if}}
+            </div>
+        </header>
 
 
-		{{#if summary}}
-		<p>{{paragraphSplit summary}}</p>
-		{{/if}}
+  {{#if summary}}
+  <div class="summary">{{paragraphSplit summary}}</div>
+  {{/if}}
 
 	</section>
 	{{/resume.basics}}
 
-	{{#if resume.skills.length}}
-	<section id="skills">
-		<h2>Skills</h2>
-		{{#each resume.skills}}
-		<div class="item">
-			{{#if name}}
-			<div class="name">
+ {{#if resume.skills.length}}
+ <section id="skills" role="region" aria-label="Skills">
+     <h2>Skills</h2>
+     {{#each resume.skills}}
+     <div class="item">
+         {{#if name}}
+         <div class="name">
 				{{name}}
 			</div>
 			{{/if}}
@@ -99,112 +89,88 @@
 	</section>
 	{{/if}}
 
-	{{#if resume.work.length}}
-	<section class="experience">
-		<h2>Experience</h2>
-		{{#each resume.work}}
-		<section class="item">
-			<header>
-				{{#if company}}
-					<h3 class="name">{{company}}</h3>
-				{{/if}}
-			</header>
-			{{#if position}}
-			<span class="position">
-				{{position}}
-			</span>
-			{{/if}}
-
-			{{#if endDate}}
-			<span class="endDate">
-				- {{date endDate}}
-			</span>
-			{{else}}
-			<span class="endDate">
-				- Present
-			</span>
-			{{/if}}
-			{{#if startDate}}
-            <span class="startDate">
-                {{date startDate}}
-            </span>
+ {{#if resume.work.length}}
+ <section class="experience" role="region" aria-label="Work Experience">
+     <h2>Work Experience</h2>
+     {{#each resume.work}}
+     <article class="item" itemscope itemtype="https://schema.org/WorkExperience">
+         <header>
+            {{#if position}}
+                <h3 class="position" itemprop="jobTitle">{{position}}</h3>
             {{/if}}
+            {{#if company}}
+                <div class="name" itemprop="name">{{company}}</div>
+            {{/if}}
+            <div class="dates">
+                {{#if startDate}}
+                <span class="startDate" itemprop="startDate">{{date startDate}}</span>
+                <span class="separator"> - </span>
+                {{/if}}
+                {{#if endDate}}
+                <span class="endDate" itemprop="endDate">{{date endDate}}</span>
+                {{else}}
+                <span class="endDate" itemprop="endDate">Present</span>
+                {{/if}}
+            </div>
+         </header>
 
 			{{#if summary}}
-			<div class="summary">
-				<p>{{paragraphSplit summary}}</p>
-			</div>
+			<div class="summary">{{paragraphSplit summary}}</div>
 			{{/if}}
-			{{#if highlights.length}}
-			<ul class="highlights">
-				{{#each highlights}}
-				<li>{{.}}</li>
-				{{/each}}
-			</ul>
-			{{/if}}
-		</section>
-		{{/each}}
-	</section>
-	{{/if}}
+            {{#if highlights.length}}
+            <ul class="highlights">
+                {{#each highlights}}
+                <li>{{.}}</li>
+                {{/each}}
+            </ul>
+            {{/if}}
+        </article>
+        {{/each}}
+    </section>
+    {{/if}}
 
-	{{#if resume.education.length}}
-	<section id="education">
-		<h2>Education</h2>
-		{{#each resume.education}}
-		<div class="item">
-			<header>
-				{{#if institution}}
-					<h3 class="name">{{institution}}</h3>
-				{{/if}}
-			</header>
+ {{#if resume.education.length}}
+ <section id="education" role="region" aria-label="Education">
+     <h2>Education</h2>
+     {{#each resume.education}}
+     <div class="item" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+         <header>
+             {{#if studyType}}
+                 <h3 class="position" itemprop="educationalLevel">
+                     {{studyType}}{{#if area}}, {{area}}{{/if}}
+                 </h3>
+             {{else}}
+                 {{#if area}}
+                 <h3 class="position">{{area}}</h3>
+                 {{/if}}
+             {{/if}}
 
-			<div class="dates">
-				{{#if endDate}}
-				<span class="endDate">
-					{{date endDate}}
-				</span>
-				{{else}}
-				<span class="endDate">
-					- Present
-				</span>
-				{{/if}}
-				{{#if startDate}}
-                <span class="startDate">
-                    {{date startDate}}
-                </span>
-                {{/if}}
-			</div>
+             {{#if institution}}
+                 <div class="name" itemprop="recognizedBy">{{institution}}</div>
+             {{/if}}
 
-			<div class="qualification">
-				{{#if studyType}}
-				<span class="studyType">
-					{{studyType}}
-				</span>
-				{{/if}}
+             <div class="dates">
+                 {{#if startDate}}
+                 <span class="startDate" itemprop="validFrom">{{year startDate}}</span>
+                 <span class="separator"> - </span>
+                 {{/if}}
+                 {{#if endDate}}
+                 <span class="endDate" itemprop="validThrough">{{year endDate}}</span>
+                 {{else}}
+                 <span class="endDate" itemprop="validThrough">Present</span>
+                 {{/if}}
+             </div>
+         </header>
+        </div>
+        {{/each}}
+    </section>
+    {{/if}}
 
-				{{#if area}}
-				<span class="area">
-					- {{area}}
-				</span>
-				{{/if}}
-
-				{{#if gpa}}
-				<span class="gpa">
-					GPA: {{gpa}}
-				</span>
-				{{/if}}
-			</div>
-
-		</div>
-		{{/each}}
-	</section>
-	{{/if}}
-
-	{{#if resume.awards.length}}
-	<section id="awards">
-		<h2>Awards</h2>
-		{{#each resume.awards}}
-		<div class="item">
+ {{#if resume.awards.length}}
+ <section id="awards" role="region" aria-label="Awards">
+     <h2>Awards</h2>
+     {{#each resume.awards}}
+     <div class="item">
 			{{#if title}}
 			<div class="title">
 				{{title}}
@@ -230,11 +196,11 @@
 	</section>
 	{{/if}}
 
-	{{#if resume.publications.length}}
-	<section id="publications">
-		<h2>Publications</h2>
-		{{#each resume.publications}}
-		<div class="item">
+ {{#if resume.publications.length}}
+ <section id="publications" role="region" aria-label="Publications">
+     <h2>Publications</h2>
+     {{#each resume.publications}}
+     <div class="item">
 			{{#if name}}
 			<div class="name">
 				{{name}}
@@ -265,11 +231,11 @@
 	</section>
 	{{/if}}
 
-	{{#if resume.languages.length}}
-	<section id="languages">
-		<h2>Languages</h2>
-		{{#each resume.languages}}
-		<div class="item">
+ {{#if resume.languages.length}}
+ <section id="languages" role="region" aria-label="Languages">
+     <h2>Languages</h2>
+     {{#each resume.languages}}
+     <div class="item">
 			{{#if language}}
 			<div class="language">
 				{{language}}
@@ -285,13 +251,13 @@
 	</section>
 	{{/if}}
 
-	{{#if resume.volunteer.length}}
-    	<section class="experience">
-    		<h2>Volunteering</h2>
-    		{{#each resume.volunteer}}
-    		<div class="item">
-    			<header>
-    				{{#if organization}}
+ {{#if resume.volunteer.length}}
+     <section class="experience" role="region" aria-label="Volunteering">
+         <h2>Volunteering</h2>
+         {{#each resume.volunteer}}
+         <div class="item">
+             <header>
+                 {{#if organization}}
     					<h3 class="name">{{organization}}</h3>
     				{{/if}}
     			</header>
@@ -302,6 +268,11 @@
     			{{/if}}
 
 
+                {{#if startDate}}
+    			<span class="startDate">
+    				{{date startDate}}
+                </span>
+                {{/if}}
     			{{#if endDate}}
     			<span class="endDate">
     				- {{date endDate}}
@@ -311,11 +282,6 @@
     				- Present
     			</span>
     			{{/if}}
-    			{{#if startDate}}
-                <span class="startDate">
-                    {{date startDate}}
-                </span>
-                {{/if}}
 
     			{{#if summary}}
     			<div class="summary">
@@ -334,11 +300,11 @@
     	</section>
     {{/if}}
 
-	{{#if resume.interests.length}}
-	<section id="interests">
-		<h2>Interests</h2>
-		{{#each resume.interests}}
-		<div class="item">
+ {{#if resume.interests.length}}
+ <section id="interests" role="region" aria-label="Interests">
+     <h2>Interests</h2>
+     {{#each resume.interests}}
+     <div class="item">
 			{{#if name}}
 			<div class="name">
 				{{name}}
@@ -356,11 +322,11 @@
 	</section>
 	{{/if}}
 
-	{{#if resume.references.length}}
-	<section id="references">
-		<h2>References</h2>
-		{{#each resume.references}}
-		<div class="item">
+ {{#if resume.references.length}}
+ <section id="references" role="region" aria-label="References">
+     <h2>References</h2>
+     {{#each resume.references}}
+     <div class="item">
 			{{#if reference}}
 			<blockquote class="reference">
 				{{reference}}
