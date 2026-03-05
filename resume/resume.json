@@ -30,12 +30,12 @@
       "position": "Staff Software Engineer",
       "startDate": "2025-04-18",
       "highlights": [
+        "Designed and implemented an LLM-powered AI agent system using Pydantic AI that accelerated prior authorization processing by 70%, directly improving patient access to medication.",
         "Designed event-driven task routing system using microservices to distribute prescription processing failures to pharmacists and technicians based on real-time availability",
-        "Eliminated task loss during agent offline transitions by implementing distributed state management to handle race conditions",
         "Improved database performance leading to 21% reduction in CPU usage, 35% reduction in IOPS and 50% reduction in costs.",
         "Backend - Python, pytest, Django, PostgresSQL",
         "Frontend - Typescript, Next.js, React, Vite",
-        "Infrastructure/Other - Docker, Kubernetes, AWS (EKS, RDS, SQS/SNS), Shell, CI/CD pipelines, Sentry, Grafana (Prometheus, Loki)"
+        "Infrastructure/Other - Docker, Kubernetes, AWS (Lambda, ElastiCache, EKS, RDS, SQS/SNS), Shell, CI/CD pipelines, Sentry, Grafana (Prometheus, Loki)"
       ]
     },
     {
